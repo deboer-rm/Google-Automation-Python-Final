@@ -2,7 +2,7 @@
 
 This repository contains scripts for the final project of Google's IT Automation with Python Professional Certificate program.
 
-# process_images.py
+# convert_images.py
 
 This script will grab .tiff files in the "images" folder and convert them to .jpeg while setting a new resolution.
 
