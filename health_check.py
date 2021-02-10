@@ -49,7 +49,7 @@ def email_notify(error_message):
   receiver = "{}@example.com".format(os.environ["USER"])
   subject = error_message
   body = "Your health check script reported an error. Please resolve the issue outlined in the subject as soon as possible."
-  message = email.generate_email(sender, receiver, subject, body)
+  message = emails.generate_email(sender, receiver, subject, body)
   emails.send_email(message)
 
 #Validate the different computer check results and set the subject if necessary. 
