@@ -48,7 +48,7 @@ def email_notify(error_message):
   sender = "automation@example.com"
   receiver = "{}@example.com".format(os.environ["USER"])
   subject = error_message
-  body = "Your health check script reported an error. Please resolve the issue outlined in the subject as soon as possible."
+  body = "Please check your system and resolve the issue as soon as possible."
   message = emails.generate_email(sender, receiver, subject, body)
   emails.send_email(message)
 
