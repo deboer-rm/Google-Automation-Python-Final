@@ -6,7 +6,7 @@ import sys
 
 # Initiate variables for source and upload path.
 
-source_path = 'supplier-data/descriptions'
+source_path = 'supplier-data/descriptions/'
 source_full = os.listdir(source_path)
 upload_path = 'http://localhost/fruits/'
 
