@@ -54,21 +54,21 @@ def email_notify(error_message):
 
 #Validate the different computer check results and set the subject if necessary. 
 if check_reboot():
-  subject = "System has a pending reboot"
+  subject = "Error - System has a pending reboot"
   email_notify(subject)
   
 if check_root_full():
-  subject = "Less than 20% of disk capacity is available"
+  subject = "Error - Available disk space is less than 20%"
   email_notify(subject)
 
 if check_cpu_constrained():
-  subject = "CPU usage is more than 80%"
+  subject = "Error - CPU usage is over 80%"
   email_notify(subject)
 
 if check_free_memory():
-  subject = "Less than 500MB of RAM is free"
+  subject = "Error - Available memory is less than 500MB"
   email_notify(subject)
 
 if check_localhost():
-  subject = "The localhost cannot be resolved to 127.0.0.1"
+  subject = "Error - localhost cannot be resolved to 127.0.0.1"
   email_notify(subject)
