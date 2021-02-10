@@ -34,7 +34,7 @@ def check_cpu_constrained():
 def check_free_memory():
     free_memory = psutil.virtual_memory().available
     # Convert to megabytes
-    free_memory_MB = available / 1024 ** 2
+    free_memory_MB = free_memory / 1024 ** 2
     return free_memory_MB < 500
 
 #Returns True if the hostname "localhost" is not "127.0.0.1", False otherwise.
