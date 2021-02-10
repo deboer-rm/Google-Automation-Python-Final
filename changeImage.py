@@ -11,6 +11,6 @@ source = os.path.expanduser('~') + '/supplier-data/images/'
 for image in os.listdir(source):
   if 'tiff' in image:
     temp = Image.open(source + image)
-    destination = '/supplier-data/images' + image.split('.')[0]
+    destination = 'supplier-data/images/' + image.split('.')[0]
     temp.convert('RGB').resize((600, 400)).save(destination + '.jpeg')
     temp.close()
