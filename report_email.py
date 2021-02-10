@@ -23,7 +23,7 @@ def generate_pdf(source_path):
 if __name__ == "__main__":
   title = "Process Updated on " + timestamp
   # Call the reports script and generate the PDF
-  package = generate_pdf(path)
+  package = generate_pdf(source_path)
   reports.generate_report("/tmp/processed.pdf", title, package)
 
   # Initialize email parameters
