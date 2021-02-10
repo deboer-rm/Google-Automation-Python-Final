@@ -4,7 +4,7 @@ import os
 import sys
 from PIL import Image
 
-#Define the source variable for the correct folder.
+#Define the source variable to point to the supplier images folder.
 source = os.path.expanduser('~') + '/supplier-data/images/'
 
 #Batch convert all tiff files to jpeg, resize them, and save them to the correct path.
