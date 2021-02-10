@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import email
+import emails
 import os
 import shutil
 import sys
@@ -50,7 +50,7 @@ def email_notify(error_message):
   subject = error_message
   body = "Your health check script reported an error. Please resolve the issue outlined in the subject as soon as possible."
   message = email.generate_email(sender, receiver, subject, body)
-  email.send_email(message)
+  emails.send_email(message)
 
 #Validate the different computer check results and set the subject if necessary. 
 if check_reboot():
