@@ -8,6 +8,7 @@ import emails
 timestamp = datetime.datetime.now().strftime('%Y-%m-%d')
 source_path = 'supplier-data/descriptions/'
 
+# This function opens the txt files in the supplier descriptions folder and processes them for our PDF attachment.
 def generate_pdf(source_path):
   pdf = ""
   files = os.listdir(source_path)
